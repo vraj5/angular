@@ -1,0 +1,102 @@
+main{
+    margin-top: 100px;
+}
+thead {
+    border-radius: 30px !important;
+    background-color: #ffffff;
+}
+button{
+    border: none;
+    background-color: transparent;
+}
+input:focus{
+    outline: none;
+}
+thead {
+    background-color: transparent !important;
+}
+
+thead tr th {
+    padding: 15px 30px;
+    color: #fff;
+    background-color: #2b3c48 !important;
+    font-size: 16px;
+    font-weight: 750;
+}
+
+tbody tr td {
+    padding: 10px 15px;
+    font-size: 16px;
+    text-align: center;
+}
+th span{
+    color: #2b3c48;
+}
+.deleteAllBtn{
+    padding: 0 40px;
+    height: 60px;
+    background-color: #2b3c48;
+    border: 2px solid #2b3c48;
+    color: #fff;
+    border-radius: 5px;
+}
+.deleteAllBtn span{
+    margin-left: 10px;
+}
+
+.table-upper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.table-striped>tbody>tr:nth-of-type(odd)>*{
+    background-color: #0095ff11;
+}
+.table-bordered{
+    border-color: #2b3c483c;
+}
+div::-webkit-scrollbar{
+height:7px;
+}
+div::-webkit-scrollbar-track{
+    border-radius: 10px;
+    webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+div::-webkit-scrollbar-thumb{
+    background-color: #2b3c48;
+    webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+.table-hover tbody tr:hover td {
+    background: #1b74b42d !important;
+}
+.delete_btn span{
+    font-size: 16px;
+    margin-left: 5px;
+}
+.recover_btn{
+    padding: 10px 20px;
+    background-color: rgb(22, 105, 200);
+    color: #ffffff;
+    border-radius: 10px;
+    border: none;
+}
+.delete_btn{
+    padding: 10px 20px;
+    background-color: rgb(255, 34, 0);
+    color: #ffffff;
+    border-radius: 10px;
+    border: none;
+}
+.table-upper input{
+    color: #000;
+    height: 60px;
+    border-radius: 7px;
+    border: none;
+    background-color: #2b3c484f;
+    padding-left: 20px;
+    font-size: 18px;
+    width: 500px;
+    font-weight: 700;
+}

@@ -1,0 +1,12 @@
+<section class="sidebar">
+    <ul class="menus menus1">
+        <li><a routerLink="/dashboard"><span><i class="fa-solid fa-table-columns"></i></span>Dashboard</a></li>
+        <li><a routerLink="/form"><span><i class="fa-solid fa-user-plus"></i></span>Register User</a></li>
+        <li><a routerLink="/table"><span><i class="fa-solid fa-users"></i></span>User List</a></li>
+        <li><a routerLink="/trash"><span><i class="fa-solid fa-trash-can"></i></span>Deleted User</a></li>
+        <li><a routerLink="/authors"><span><i class="fa-solid fa-user-graduate"></i></span>Authors</a></li>
+    </ul>
+    <ul class="menus menus2">
+        <li><a (click)="logout_admin()" routerLink="/trash"><span><i class="fa-solid fa-right-from-bracket"></i></span>Log Out</a></li>
+    </ul>
+</section>

@@ -1,0 +1,45 @@
+/* @import 'ngx-toastr/toastr'; */
+
+
+html{
+    scroll-behavior: smooth;
+    padding: 0 !important;
+}
+html::-webkit-scrollbar{
+    width: 0vw;
+}
+html::-webkit-scrollbar-thumb{
+    background-color:  #2b3c48;
+}
+html::-webkit-scrollbar-track{
+    background-color: #f9fafb;
+}
+.ngx-pagination li{
+    background-color: #2b3c484f;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 10px !important;
+    margin: 0 5px;
+}
+.ngx-pagination .current{
+    padding: 18px 27px !important;
+    transition: all 0.5s;
+    background-color: #2b3c48 !important;
+}
+.ngx-pagination a:hover{
+    background-color: transparent !important;
+}
+.ngx-pagination .disabled:hover{
+    background-color: #2b3c484f !important;
+    color: #2b3c48 !important;
+}
+.ngx-pagination .disabled{
+    background-color: #2b3c484f !important;
+    color: #2b3c48 !important;
+    transition: all 0.5s;
+}
+.ngx-pagination a, .ngx-pagination button{
+    text-decoration: none !important;
+    display: block;
+    padding: 15px 25px !important;
+}

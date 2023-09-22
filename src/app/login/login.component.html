@@ -1,0 +1,27 @@
+<main>
+    <div class="container-fluid">
+                    <h1 class="title">registration form</h1>
+                <p class="key-line">Login to get All Access of Users and Discover more about Users...</p>
+                <div class="form-main">
+                    <input [(ngModel)]="username" type="text" placeholder="Username"/>
+                    <input [(ngModel)]="pass" type="password" placeholder="Password"/>
+                    <div class="captcha-main">
+                        <ngx-recaptcha2 class="captcha" #captchaElem [siteKey]="siteKey"></ngx-recaptcha2>
+                    </div>
+                    <button (click)="loginBtn()" class="loginBtn" id="loginBtn">Login</button>
+                </div>
+                <div class="features-main">
+                <div class="features-title">
+                    <h4>Our Features</h4>
+                </div>
+                    <div class="all-features">
+                        <p><span><i class="fa-solid fa-heart"></i></span>Dashboard</p>
+                        <p><span><i class="fa-solid fa-heart"></i></span>Registration Form</p>
+                        <p><span><i class="fa-solid fa-heart"></i></span>Users List</p>
+                        <p><span><i class="fa-solid fa-heart"></i></span>Deleted Users List</p>
+                    </div>
+                </div>
+                <!-- <img src="../../assets/img/login/User-Registration.webp" alt="User-registration"/> -->
+                <img src="https://images.unsplash.com/photo-1500964757637-c85e8a162699?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmVhdXRpZnVsJTIwbGFuZHNjYXBlfGVufDB8fDB8fHww&w=1000&q=80" alt="User-registration"/>
+    </div>
+</main>

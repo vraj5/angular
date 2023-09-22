@@ -1,0 +1,24 @@
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 other-menus">
+                <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+                <div class="brand">
+                    <h1>{{brand}}</h1>
+                </div>
+                <a routerLink="/website" class="site"><span><i class="fa-solid fa-globe"></i></span>{{site_name}}</a>
+                <button (click)="service.reload_page()" class="refresh-btn"><span><i
+                            class="fa-solid fa-arrows-rotate"></i></span>Refresh</button>
+            </div>
+            <div class="col-6 admin-main">
+                <a>
+                    <div class="admin_image"><img src="../../../assets/img/admin/admin-user.jpeg" alt=""></div>
+                    <div class="admin-info">
+                        <h6 class="admin_name">Vraj Patoliya</h6>
+                        <h6 class="admin_role">admin</h6>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>

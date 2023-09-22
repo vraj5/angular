@@ -1,0 +1,75 @@
+<section class="dashboard">
+    <div class="row">
+        <div class="col-6">
+            <div class="card-main yellow">
+                <h4><span><i class="fa-solid fa-users"></i></span>Total users</h4>
+                <p>LIFETIME</p>
+                <div class="row">
+                    <h2>{{totalUsers}}</h2>
+                    <button routerLink="/table">View All <span><i class="fa-solid fa-arrow-right"></i></span></button>
+                </div>
+                <div class="bg-img"><span><i class="fa-solid fa-users"></i></span></div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card-main red">
+                <h4><span><i class="fa-solid fa-users"></i></span>Deleted users</h4>
+                <p>LIFETIME</p>
+                <div class="row">
+                    <h2>{{totalDeletedUsers}}</h2>
+                    <button routerLink="/trash">View All <span><i class="fa-solid fa-arrow-right"></i></span></button>
+                </div>
+                <div class="bg-img"><span><i class="fa-solid fa-users"></i></span></div>    
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card-main green">
+                <h4><span><i class="fa-solid fa-users"></i></span>Authors</h4>
+                <p>LIFETIME</p>
+                <div class="row">
+                    <h2>{{totalAuthors}}</h2>
+                    <button routerLink="/admin">View All <span><i class="fa-solid fa-arrow-right"></i></span></button>
+                </div>
+                <div class="bg-img"><span><i class="fa-solid fa-users"></i></span></div>    
+            </div>
+        </div>
+    </div>
+    <div class="row second-row">
+        <div class="col-3">
+            <div class="card-main white">
+                <h4 class="card-title-main"><span>india </span><span class="count l-y">{{indianUser}}</span></h4>
+                <ul>
+                    <li class="sub-li l-y"><span>Gujarat : </span><span>{{gujaratUser}}</span></li>
+                    <li class="sub-li l-y"><span>Maharshtra : </span><span>{{maharashtraUser}}</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card-main white">
+                <h4 class="card-title-main"><span>America </span><span class="count l-b">{{americaUser}}</span></h4>
+                <ul>
+                    <li class="sub-li l-b"><span>California : </span><span>{{californiaUser}}</span></li>
+                    <li class="sub-li l-b"><span>Hawaii : </span><span>{{hawaiiUser}}</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card-main white">
+                <h4 class="card-title-main"><span>london </span><span class="count l-r">{{londonUser}}</span></h4>
+                <ul>
+                    <li class="sub-li l-r"><span>England : </span><span>{{englandUser}}</span></li>
+                    <li class="sub-li l-r"><span>Paris : </span><span>{{parisUser}}</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card-main white">
+                <h4 class="card-title-main"><span>australia</span><span class="count l-g">{{australiaUser}}</span></h4>
+                <ul>
+                    <li class="sub-li l-g"><span>Vales : </span><span>{{valesUser}}</span></li>
+                    <li class="sub-li l-g"><span>Victoria : </span><span>{{victoriaUser}}</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

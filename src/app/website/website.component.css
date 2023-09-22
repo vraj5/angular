@@ -1,0 +1,36 @@
+header{
+    background-color: #2b3c48;
+    padding: 15px 0;
+}
+header .row{
+    align-items: center;
+    justify-content: space-between;
+}
+header .brand{
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+}
+header .dashBoardLink{
+    color: #2b3c48;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #fff;
+    border: 3px solid #fff;
+    padding: 10px 40px;
+    transition: all 0.3s;
+    border-radius: 10px;
+}
+header .dashBoardLink:hover{
+    background-color: transparent;
+    color: #fff;
+}
+header p{
+    color: #fff;
+    margin: 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    text-align: center;
+}

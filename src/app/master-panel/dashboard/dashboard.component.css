@@ -1,0 +1,137 @@
+.dashboard{
+    margin-top: 100px;
+}
+button{
+    cursor: pointer;
+    position: relative;
+    z-index: 999999;
+}
+.card-main{
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.yellow{
+    background-color: #fbbc04;
+}
+.blue{
+    background-color: #4188f5;
+}
+.red{
+    background-color: #ee4538;
+}
+.green{
+    background-color: #33a953;
+}
+.l-y{
+    background-color: #ffd9003d;
+}
+.l-b{
+    background-color: #4188f53d;
+}
+.l-r{
+    background-color: #ee45383d;
+}
+.l-g{
+    background-color: #33a9533d;
+}
+.card-main h4{
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.card-main h4 span{
+    margin-right: 10px;
+}
+.card-main p{
+    color: #000;
+    padding: 3px 10px;
+    border-radius: 20px;
+    background-color: #fff;
+    width: max-content;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.card-main .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.card-main h2{
+    width: max-content;
+    margin: 0;
+    font-size: 65px;
+    font-weight: 800;
+}
+.card-main button{
+    width: max-content;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+}
+.card-main button span{
+    transition: all 0.3s
+}
+.card-main button:hover span{
+    padding-left: 20px;
+}
+.card-main .bg-img{
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+}
+.card-main .bg-img span{
+    font-size: 160px;
+    color: #ffffff24;
+}
+.second-row{
+    margin-top: 30px;
+}
+.card-main.white{
+    background-color: #fff;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.08),-10px -10px 30px rgba(0, 0, 0, 0.08);
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.card-title-main{
+    font-size: 22px;
+    text-transform: uppercase !important;
+    font-weight: 900;
+    color: #000 !important;
+}
+.card-title-main .count{
+    font-size: 28px;
+    font-weight: 700;
+    padding: 7px 10px;
+    border-radius: 7px;
+}
+ul li{
+    font-size: 18px;
+    line-height: 35px;
+    font-weight: 700;
+}
+.sub-li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 7px 0;
+    font-weight: 400 !important;
+    line-height: 25px !important;
+}
+.sub-li span:last-child{
+    font-weight: 700;
+}

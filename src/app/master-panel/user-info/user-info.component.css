@@ -1,0 +1,27 @@
+main{
+    padding: 50px;
+}
+.box{
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #2b3c48;
+    background-color: #2b3c484f;
+    /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.09),-10px -10px 10px rgba(0, 0, 0, 0.09); */
+}
+main .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h5{
+    margin: 0;
+    color: #2b3c48;
+    font-weight: 700;
+    font-size: 18px;
+}
+h5 span{
+    color: #2b3c48;
+    padding-left: 10px;
+    font-size: 16px;
+}

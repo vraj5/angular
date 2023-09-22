@@ -1,0 +1,133 @@
+<main class="register_body">
+    <div class="row">
+        <!-- =================== First Name -->
+        <div class="col-4 input_main">
+            <label class="input_label">First Name : <sup class="red">*</sup></label>
+            <input [(ngModel)]="fname" type="text" class="register_input" id="first_name" placeholder="Enter Your First Name">
+        </div>
+        <!-- =================== Last Name -->
+        <div class="col-4 input_main">
+            <label class="input_label">Last Name : <sup class="red">*</sup></label>
+            <input [(ngModel)]="lname" type="text" class="register_input" id="last_name" placeholder="Enter Your Last Name">
+        </div>
+        <!-- =================== Age -->
+        <div class="col-4 input_main">
+            <label class="input_label">Age : <sup class="red">*</sup></label>
+            <input [(ngModel)]="age" type="number" class="register_input" id="age" placeholder="Enter Your Age">
+        </div>
+        <!-- =================== Email -->
+        <div class="col-6 input_main">
+            <label class="input_label">Email : <sup class="red">*</sup></label>
+            <input [(ngModel)]="email" type="email" class="register_input" id="email" placeholder="Enter Your Email Address">
+        </div>
+        <!-- =================== Phone number -->
+        <div class="col-6 input_main">
+            <label class="input_label">Phone Number : <sup class="red">*</sup></label>
+            <div class="row">
+                <div class="col-12">
+                    <input [(ngModel)]="phone" type="text" class="register_input" id="phone" placeholder="Enter Your Phone Number">
+                </div>
+            </div>
+        </div>
+        <!-- =================== Password -->
+        <div class="col-6 input_main">
+            <label class="input_label">Password : <sup class="red">*</sup></label>
+            <div class="pass_main register_input">
+                <input [(ngModel)]="password" type="password" class="col-11 pass_input" id="password" placeholder="Enter Your Password">
+                <div class="col-1 pass_hide_main"><span class="after_show dn" id="after_show_p"><i i (click)="pass()"
+                            class="fa-solid fa-eye pass_hide"></i></span><span class="after_hide" id="after_hide_p"><i
+                            (click)="pass()" class="fa-solid fa-eye-slash pass_hide"></i></span></div>
+            </div>
+        </div>
+        <!-- =================== Confirm Password -->
+        <div class="col-6 input_main">
+            <label class="input_label">Confirm Password : <sup class="red">*</sup></label>
+            <div class="pass_main register_input">
+                <input [(ngModel)]="c_password" type="password" class="col-11 pass_input" id="c_password" placeholder="Enter Your Password">
+                <div class="col-1 pass_hide_main"><span class="after_show dn" id="after_show_cp"><i (click)="c_pass()"
+                            class="fa-solid fa-eye pass_hide"></i></span><span class="after_hide" id="after_hide_cp"><i
+                            (click)="c_pass()" class="fa-solid fa-eye-slash pass_hide"></i></span></div>
+            </div>
+        </div>
+        <!-- =================== Gender -->
+        <div class="col-4 input_main">
+            <div class="col-12">
+                <label class="input_label input_label_main">Gender : <sup class="red">*</sup></label>
+                <input type="radio" class="radio_input" (change)="onGenderChange($event)" name="gender" id="male" value="male"><label for="male"
+                    class="input_label radio_label" checked>Male</label>
+                <input type="radio" class="radio_input" (change)="onGenderChange($event)" name="gender" id="female" value="female"><label for="female"
+                    class="input_label radio_label">Female</label>
+            </div>
+        </div>
+        <!-- =================== Skills -->
+        <div class="col-8 input_main">
+            <label class="input_label">Skills : <sup class="red">*</sup></label>
+            <div class="row">
+                <div class="col-6 skill_menus">
+                    <div class="pass_main register_input">
+                        <input [(ngModel)]="skill" (keydown)="addSKillOnEnter($event)" type="text" class="col-11 pass_input" id="skill" placeholder="Enter Your Skill">
+                        <div class="col-1 skill_submit_main"><i (click)="addSkill()"
+                                class="fa-solid fa-plus pass_hide"></i></div>
+                    </div>
+                    <button id="clear_all_skill" (click)="clear_all_skill()" class="clear_all_skill">Clear All
+                        Skill</button>
+                </div>
+                <div class="col-6">
+                    <div id="all_skill_main" class="all_skill_main">
+                        <div class="skill_box" *ngFor="let item of all_skill">
+                            <span>{{item}}</span>
+                            <button (click)="delete_skill(item)" id="delete_skill_box"><i class="fa-solid fa-trash delete_skill"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =================== Hobbies -->
+        <div class="col-8 form-check" style="margin-top: 10px;">
+            <label class="input_label input_label_main">Hobbies : <sup class="red">*</sup></label>
+                <div class="ms-2 form-check-inline form-switch"  *ngFor="let item of allHobbies">
+                    <input id="checkBox" class="form-check-input"
+            type="checkbox" [checked]="item.isSelected" value (click)="updateItem($event, item)"
+            value="{{item.id}}"> <label> {{ item.name }} </label>
+                </div>
+        </div>
+        <!-- =================== Image Upload -->
+        <div class="col-4 input_main">
+            <img class="uploaded-image" [src]="imageSrc"/>
+    <input class="custom-file-input" name="imageUrl" type="file" accept="image/*" required (change)="handleInputChange($event)" />
+        </div>
+        <!-- =================== Country -->
+        <div class="col-4 input_main">
+            <label class="input_label">Country : <sup class="red">*</sup></label>
+            <select name="country" id="country" [(ngModel)]="countrySelect" (change)="selectState($event)" class="select_field register_input">
+                <option value="" selected="selected">Select Country</option>
+                <option [value]="item.c_id" *ngFor="let item of country">{{item.country}}</option>
+            </select>
+        </div>
+        <!-- =================== State -->
+        <div class="col-4 input_main">
+            <label class="input_label">State : <sup class="red">*</sup></label>
+            <select name="state" id="state" [(ngModel)]="stateSelect" (change)="selectCity($event)" class="select_field register_input">
+                <option value="" selected="selected">Select State</option>
+                <option [value]="item.s_id" *ngFor="let item of stateArray">{{item.state}}</option>
+            </select>
+        </div>
+        <!-- =================== City -->
+        <div class="col-4 input_main">
+            <label class="input_label">City : <sup class="red">*</sup></label>
+            <select name="city" [(ngModel)]="citySelect" id="city" class="select_field register_input">
+                <option value="" selected="selected">Select City</option>
+                <option [value]="item.ct_id" *ngFor="let item of cityArray">{{item.city}}</option>
+            </select>
+        </div>
+        <!-- =================== Write about you -->
+        <div class="col-12 input_main">
+            <label class="input_label">Write about you : <sup class="red">*</sup></label>
+            <textarea [(ngModel)]="about_user" name="about_user" class="register_text" id="about_user" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+    <div class="form_btn_main">
+        <button type="button" id="complete_register_btn" (click)="complete_registration()"
+            class="complete_register_btn db"> Register <span><i class="fa-solid fa-arrow-right"></i></span></button>
+    </div>
+</main>
